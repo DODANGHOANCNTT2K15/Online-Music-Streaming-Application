@@ -1,0 +1,443 @@
+.catergory{
+    position: fixed;
+    top:57px;
+    left: 0px;
+    width: 180px;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.288);
+    transition: transform 1s;
+}
+    .catergory-main{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+    }
+    .catergory-main div{
+        margin-bottom: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+    }
+    .catergory-main div:hover{
+        background-color: gray;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+        .catergory-main div span{
+            margin: 0px 10px;
+            background-color: transparent;
+        }
+    .playlist-user #btn-create-playlist{
+        background-color: gray;
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+        #btn-create-playlist:hover{
+            background-color: rgb(39, 39, 39) !important;
+        }
+        .playlist-user #btn-create-playlist span{
+            background-color: transparent;
+        }
+        .playlist-list{
+            margin-top: 20px;
+        }
+        .playlist-list li{
+            padding: 10px;
+            display: flex;
+            cursor: pointer;
+        }
+            .playlist-list li span{
+                margin-right: 15px;
+                background-color: transparent;
+            }
+            .playlist-list li:hover{
+                background-color: gray;
+                border-radius: 10px;
+            }
+/* Tạo danh sách phát */
+.form-create-playlist{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    background-color: rgba(29, 29, 29, 0.685);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .form-create-playlist .cover{
+        width: 600px;
+        height: 200px;
+        background-color: rgb(27, 27, 27);
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.233);
+    }
+        .cover input{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+        .cover form{
+            margin-top:20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+        }
+        .cover span{
+            background-color: transparent;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border-radius: 25px;
+        }
+        .cover button{
+            padding: 8px 15px;
+            background-color: rgb(255, 255, 255);
+            font-size: 15px;
+            color: black;
+            border-radius: 25px;
+        }
+            .cover span:hover, button:hover{
+                background-color: gray;
+            }
+
+/* Chọn danh sách */
+.select-playlist{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background-color: rgba(29, 29, 29, 0.685);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .cover-select{
+        width: 500px;
+        height: 330px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgb(27, 27, 27);
+        border: 1px solid rgba(255, 255, 255, 0.233);
+    }
+        .all-playlist{
+            margin-top: 20px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.336);
+        }
+        .all-playlist ul li{
+            list-style: none;
+            display: flex;
+            height: 30px;
+            padding: 15px;
+            border: 1px solid rgba(190, 190, 190, 0.521);
+            cursor: pointer;
+        }
+        .all-playlist ul li:hover{
+            background-color: gray !important;
+        }
+        .btn-create-playlist-in-select{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+            #btn-create-playlist-3{
+                background-color: transparent;
+                padding: 10px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            #btn-create-playlist-3:hover, #btn-create-playlist-4:hover{
+                background-color: grey !important;
+                border-radius: 25px;
+            }
+/* Trang chủ  */
+.home-center{
+    width: 1510px;
+    height: fit-content;
+    /* background-color: aqua; */
+    padding-left: 300px;
+    z-index: 200;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgb(61, 45, 22) 1%, black 99%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 100px;
+    background-blend-mode: overlay;
+}
+    .home-center .suggestion,.album,.continue,.artist, .listen-again{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-color: transparent;
+    }
+    .home-center h2{
+        background-color: transparent;
+    }
+    .home-center li,ul{
+        list-style: none;
+    }
+    .suggestion ul{
+        display: flex;
+    }
+        .suggestion ul li{
+            padding: 8px 15px;
+            background-color: rgba(97, 97, 97, 0.815);
+            border-radius: 10px;
+            margin-right: 13px;
+        }
+        .suggestion ul li:hover{
+            background-color: rgba(119, 119, 119, 0.952);
+        }
+    .cover-album{
+        width: 100%;
+        height: fit-content;
+        overflow-x: scroll;
+        background-color: transparent;
+    }
+        .cover-album li:hover{
+            transform: scale(90%);
+        }
+        .cover-each-album{
+            width: 200px;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+        .cover-album img{
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .cover-album ul{
+            display: flex;
+        }
+        .cover-album ul li{
+            margin-right: 20px;
+        }
+        .title-album{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .title-album-cover{
+            font-size: 20px;
+        }
+        .title-artist-sub{
+            opacity: 0.5;
+            font-size: 15px;
+        }
+        .play-each-album{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 140px;
+            left: 135px;
+        }
+.home-listen{
+    position: fixed;
+    /* background-color: aqua !important; */
+    top: 100px;
+    left: 250px;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+    .cover-driver{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        /* background-color: white; */
+        position: relative;
+    }
+    .cover-driver #rotation{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .rotation{
+        animation: rotate360 2.5s linear infinite;
+    }
+
+    @keyframes rotate360 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .inside-driver{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        transform: translate(84%, 84%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .inside-driver img{
+        height: 190px;
+    }
+    .point-in-driver{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top:0px;
+        left: 0px;
+        z-index: 500;
+        transform: translate(955%,955%);
+        border-radius: 50%;
+    }
+
+/* Làm animation chuyển đổi qua các trang */
+
+
+.rotation180{
+    transform: rotateZ(180deg);
+    transition: transform 0.6s;
+}
+.rotation180back{
+    transform: rotateZ(0deg);
+    transition: transform 0.6s;
+}
+.up{
+    transform: translateY(120%);
+    transition: transform 0.6s;
+}
+.down{
+    transform: translateY(0);
+    transition: transform 0.6s;
+}
+
+/* danh sách nhạc */
+.track-in-playlist{
+    position: fixed;
+    background-color: rgb(31, 30, 30) !important;
+    top: 100px;
+    right: 100px;
+    width: 450px;
+    height: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+}   
+    .list-tracks{
+        height: 400px;
+        overflow-y: scroll;
+    }
+    .list-tracks ul li{
+        height: 50px;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        border: 1px solid white;
+        padding: 8px 0px;
+    }
+    .list-tracks ul li:hover{
+        background-color: gray;
+    }
+    .cover-img-track {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cover-img-track img{
+        height: 100%;
+    }
+    .cover-track{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .title-track{
+            width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .title-track span{
+                width: 100%;
+            }
+            .title-track span:first-child{
+                font-size: 15px;
+            }
+
+/* thư viện */
+.liked{
+    position: fixed;
+    /* background-color: aqua !important; */
+    top: 100px;
+    left: 250px;
+    width: 1250px;
+    height: 500px;
+    display: flex;
+    box-sizing: border-box;
+}
+    .left-cover-liked{
+        width: 40%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+        .cover-title-liked{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+        }
+    .right-cover-liked{
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        padding: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+        .right-cover-liked ul li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            border-bottom: 1px solid white;
+        }
+        .right-cover-liked ul li:hover{
+            background-color: gray;
+        }

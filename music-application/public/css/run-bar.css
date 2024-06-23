@@ -1,0 +1,98 @@
+.run-bar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #244cc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+    .run-bar .range-progress{
+        width: 100%;
+        height: 10px;
+        z-index: 1000;
+    }
+        .range-progress input{
+            width: 100%;
+        }
+    .run-bar .controls{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 75px;
+        z-index: 500;
+        width: 100%;
+        align-items: center;
+        padding: 0px 20px;
+    }
+        .run-bar .controls span{
+            margin: 0px 10px;
+        }
+        .run-bar .controls .volume{
+            width: 35px;
+            height: 35px;
+            box-sizing: border-box;
+            background-color: rgb(51, 51, 51);
+            margin: 0px 20px;
+            cursor: pointer;
+        }
+            .run-bar .controls .volume span{
+                background-color: transparent;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        .run-bar .time-info{
+            font-size: 12px;
+            width: 100px !important;
+            display: flex;
+        }
+        .run-bar .controls .track-info{
+            display: flex;
+            flex-wrap: wrap;
+            width: 840px;
+            padding: 50px;
+            background-color: transparent;
+        }
+            .run-bar .controls .track-info span{
+                width: 100%;
+                font-size: 13px;
+                font-weight: lighter;
+                display: flex;
+                justify-content: center;
+            }
+            .run-bar .controls .track-info span:first-child{
+                font-size: 17px;
+                font-weight: bold;
+            }
+        .run-bar .controls .volume-slider-container {
+            position: absolute;
+            bottom: 80px; /* Điều chỉnh vị trí so với nút âm lượng */
+            left: 278px;
+            transform: translateX(-50%);
+            background: rgb(53, 53, 53);
+            border-radius: 4px;
+            padding: 10px;
+            z-index: 2000;
+        }
+            .run-bar .controls .volume-slider-container input[type="range"] {
+                -webkit-appearance: slider-vertical;
+                writing-mode: bt-lr;
+                width: 21px;
+                height: 150px;
+                background: #ffffff;
+                outline: none;
+                opacity: 0.7;
+                transition: opacity .2s;
+            }
+        .run-bar .material-icons:hover{
+            background-color: rgb(78, 78, 78);
+            border-radius: 50%;
+            cursor: pointer;
+        }

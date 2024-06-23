@@ -1,0 +1,160 @@
+.header{
+    height: 57px;
+    width: 100%;
+    background-color: aqua;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(243, 243, 243);
+    z-index: 500;
+}
+
+.header-left{
+    height: 56px;
+    width: 15%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: start;
+    padding-left: 20px;
+}
+    .header-left img{
+        height: 56px;
+        margin-left: 5px;
+    } 
+    .header-left .menu-icon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+        .header-left .menu-icon:hover{
+            background-color: rgb(82, 82, 82);
+        }
+
+.header-center{
+    width: 70%;
+    height: 56px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+        #form-search{
+            
+            display: flex;
+            align-items: center;
+            width:400px;
+        }
+        #form-search input{
+            width: 350px;
+            height: 30px;
+            padding-left: 10px;
+            background-color: rgb(37, 37, 37);
+            color: white;
+            border: 1px solid white;
+        }
+        #form-search button{
+            width: 40px;
+            background-color: rgb(29, 28, 28);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 32px;
+            box-sizing: border-box;
+            border: 1px solid white;
+        }
+            #form-search button:hover{
+                background-color: gray;
+            }
+
+.header-right{
+    width: 17%;
+    height: 56px;
+    background-color: aqua;
+    box-sizing: border-box;
+    position: static;
+}
+    .header-right .user-authentication{
+        height: 56px;
+        display: flex;
+        align-items: center;
+    }
+        .header-right .user-authentication a{
+            margin-left: 15px;
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            padding: 7px 15px;
+            color: rgb(255, 255, 255);
+            color: black;
+            font-size: 15px;
+        }
+            .header-right .user-authentication a:first-child{
+                background-color: transparent;
+                padding: 6px;
+                color: white;
+            }
+        .header-right .user-authentication a:hover{
+            background-color: gray;
+        }
+    .header-right .user-signed-in{
+        box-sizing: border-box;
+        height: 56px;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .profile-picture{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            cursor: pointer;
+        }
+            .profile-picture img{
+                width: 100%;
+                object-fit: cover;
+            }
+        .dropdown-menu-user{
+           position: absolute;
+           top: 50px;
+           right: inherit;
+           background-color: rgb(70, 70, 70);
+           width: 100px;
+           padding: 10px;
+        }
+            .dropdown-menu-user li{
+                list-style: none;
+                padding:10px;
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+                background-color: transparent;
+            }
+            .dropdown-menu-user li:hover{
+                background-color: gray;
+            }
+            .dropdown-menu-user li a{
+                text-decoration: none;
+                background-color: transparent;
+            }
+            .dropdown-menu-user li button{
+                background-color: none;
+                border: none;
+                box-shadow: none;
+                width: 100%;
+                color: rgb(245, 73, 6);
+                font-size: 15px;
+                background-color: transparent;
+            }
+            .dropdown-menu-user form{
+                background-color: transparent;
+            }
